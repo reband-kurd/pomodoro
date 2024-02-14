@@ -1,7 +1,7 @@
 'use client'
 import {useEffect, useState} from "react";
 import Clock from "@/app/comp/minute";
-
+import Navbar from "@/app/comp/navbar";
 
 
 function HomePage() {
@@ -11,13 +11,13 @@ function HomePage() {
 
 
     return (<>
+        <Navbar/>
         <div className="flex flex-col justify-center items-center mt-10 select-none">
         <Clock
-
                Working={working}
                setWorking={setworking}
-
-        /></div>
+        />
+        </div>
     </>);
 }
 
